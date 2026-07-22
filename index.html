@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capability & Partnership Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #fcfbfa;
+            --text-main: #2d2a29;
+            --text-muted: #64605e;
+            --accent-warm: #b87d4b;
+            --accent-cool: #4a6b82;
+            --card-bg: #ffffff;
+            --border-color: #eae7e4;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 0 1.5rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 4rem 0;
+        }
+
+        header {
+            margin-bottom: 4rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 2.5rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 400;
+            letter-spacing: -0.03em;
+            margin-bottom: 0.5rem;
+            color: var(--text-main);
+        }
+
+        .subtitle {
+            font-size: 1.15rem;
+            color: var(--text-muted);
+            max-width: 600px;
+        }
+
+        .value-prop {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 3.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+
+        .value-prop h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--accent-warm);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .value-prop p {
+            font-size: 1.2rem;
+            color: var(--text-main);
+            font-weight: 400;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        @media (max-width: 500px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .category-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 2rem;
+        }
+
+        .category-card h3 {
+            font-size: 1.4rem;
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+        }
+
+        .tech-card h3 {
+            color: var(--accent-cool);
+            border-bottom: 2px solid #e1e9ef;
+        }
+
+        .trade-card h3 {
+            color: var(--accent-warm);
+            border-bottom: 2px solid #f5ebd8;
+        }
+
+        .skill-list {
+            list-style: none;
+        }
+
+        .skill-item {
+            margin-bottom: 1.25rem;
+        }
+
+        .skill-name {
+            font-weight: 600;
+            font-size: 1rem;
+            color: var(--text-main);
+        }
+
+        .skill-desc {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-top: 0.2rem;
+        }
+
+        /* CONTACT SECTION */
+        .contact-section {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 4rem;
+            text-align: center;
+        }
+
+        .contact-section h3 {
+            font-size: 1.25rem;
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+            color: var(--text-main);
+        }
+
+        .links-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        .contact-link {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            text-decoration: none;
+            transition: background-color 0.2s, color 0.2s;
+        }
+
+        .link-email {
+            background-color: var(--text-main);
+            color: var(--bg-color);
+        }
+
+        .link-email:hover {
+            background-color: var(--text-muted);
+        }
+
+        .link-social {
+            background-color: transparent;
+            color: var(--text-main);
+            border: 1px solid var(--border-color);
+        }
+
+        .link-social:hover {
+            background-color: #f3f1ee;
+            border-color: var(--text-muted);
+        }
+
+        footer {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <header>
+            <h1>Partnership & Capability Portfolio</h1>
+            <p class="subtitle">A factual overview of core competencies, infrastructure management, and domestic self-reliance.</p>
+        </header>
+
+        <section class="value-prop">
+            <h2>Core Objective</h2>
+            <p>To provide a high, modern standard of living while simultaneously eliminating the stress, logistical friction, and financial cost of outsourcing home, vehicle, and digital maintenance to outside contractors.</p>
+        </section>
+
+        <main class="grid">
+            
+            <!-- TECH CAPABILITIES -->
+            <section class="category-card tech-card">
+                <h3>Digital Infrastructure & Tech</h3>
+                <ul class="skill-list">
+                    <li class="skill-item">
+                        <div class="skill-name">Software Testing & Optimization</div>
+                        <div class="skill-desc">Ensuring digital tools, personal workflows, and hardware integration function flawlessly without glitches.</div>
+                    </li>
+                    <li class="skill-item">
+                        <div class="skill-name">Advanced Networking</div>
+                        <div class="skill-desc">Designing fast, secure, enterprise-grade home internet architecture with comprehensive Wi-Fi coverage.</div>
+                    </li>
+                    <li class="skill-item">
+                        <div class="skill-name">Security Systems</div>
+                        <div class="skill-desc">Implementing physical and digital monitoring networks to keep the property and data safe.</div>
+                    </li>
+                    <li class="skill-item">
+                        <div class="skill-name">Smart Home Automation</div>
+                        <div class="skill-desc">Programming seamless lighting, climate, and media controls for utility efficiency and daily comfort.</div>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- TRADES CAPABILITIES -->
+            <section class="category-card trade-card">
+                <h3>Domestic Trades & Maintenance</h3>
+                <ul class="skill-list">
+                    <li class="skill-item">
+                        <div class="skill-name">Carpentry & Framing</div>
+                        <div class="skill-desc">Building, repairing, and modifying structural woodwork and interior fixtures.</div>
+                    </li>
+                    <li class="skill-item">
+                        <div class="skill-name">Plumbing Systems</div>
+                        <div class="skill-desc">Handling installations, leak prevention, and diagnostic maintenance independently.</div>
+                    </li>
+                    <li class="skill-item">
+                        <div class="skill-name">Electrical Infrastructure</div>
+                        <div class="skill-desc">Safe diagnostic capabilities, wiring upgrades, and fixture updates.</div>
+                    </li>
+                    <li class="skill-item">
+                        <div class="skill-name">Painting & Staining</div>
+                        <div class="skill-desc">Precision interior/exterior aesthetic upkeep and protective material coatings.</div>
+                    </li>
+                    <li class="skill-item">
+                        <div class="skill-name">Landscaping & Gardening</div>
+                        <div class="skill-desc">Managing exterior property aesthetics, soil health, and functional outdoor spaces.</div>
+                    </li>
+                    <li class="skill-item">
+                        <div class="skill-name">Automotive Mechanics</div>
+                        <div class="skill-desc">Conducting preventative maintenance and standard repairs to ensure fleet reliability.</div>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- CULINARY CAPABILITIES -->
+            <section class="category-card trade-card" style="grid-column: 1 / -1;">
+                <h3>Culinary Arts & Provisioning</h3>
+                <ul class="skill-list" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+                    <li class="skill-item">
+                        <div class="skill-name">Grilling & Smoking</div>
+                        <div class="skill-desc">Mastery of thermal management, protein preparation, and outdoor hosting dynamics.</div>
+                    </li>
+                    <li class="skill-item">
+                        <div class="skill-name">Baking & Pastry</div>
+                        <div class="skill-desc">Precise, chemistry-backed scratch baking for reliable high-quality daily provisions.</div>
+                    </li>
+                </ul>
+            </section>
